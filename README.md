@@ -19,7 +19,7 @@ g++-7 --std=c++17 -o app.e webcrawler.o main.cpp -lcurl
 
 ## Example
 ```
-./app.e 'https://panoramafirm.pl/szukaj?k=notariusz' '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+' 0
+./app.e www.panoramafirm.pl/szukaj?k=notariusz' '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+' 0
 ```
 
 ## Output
