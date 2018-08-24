@@ -11,7 +11,7 @@ g++-7 --std=c++17 -o app.e webcrawler.o main.cpp -lcurl
 
 ## Using
 ```
-./app [url] [depth]
+./app [url] [regex] [depth]
     [url] - url of page to start crawling in format www.[PAGE].[pl/com/org/...]/[rest of link]
     [regex] - regex of strings to search for
     [depth] - depth of crawling, 0 - crawl only in input page
