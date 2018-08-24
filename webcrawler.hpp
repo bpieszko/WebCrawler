@@ -19,7 +19,7 @@ private:
 
 public:
 	WebCrawler(const std::regex & r);
-	virtual void crawl(const std::string & url, const int depth, std::ostream & out);
+	virtual void crawl(std::string url, const int depth, std::ostream & out);
 };
 
 #endif // WEBCRAWLER_HPP

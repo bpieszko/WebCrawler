@@ -5,7 +5,14 @@ WebCrawler::WebCrawler(const std::regex & r)
 	regexArg = r;
 }
 
-void WebCrawler::crawl(const std::string & url, const int depth, std::ostream & out) {
+void WebCrawler::crawl(std::string url, const int depth, std::ostream & out) {
+	if (url.substr(0, 8) == "https://")
+		url.replace(0, 8, "");
+	if (url.substr(0, 7) == "http://")
+		url.replace(0, 7, "");
+	if (url.substr(0, 4) != "www.")
+		url = "www." + url;
+
 	std::queue<std::pair<std::string, unsigned> > qUrls;
 	qUrls.push({url, 0});
 
