@@ -19,8 +19,38 @@ g++-7 --std=c++17 -o app.e webcrawler.o main.cpp -lcurl
 
 ## Example
 ```
-./app.e 'https://panoramafirm.pl/szukaj?k=notariusz' '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+' 2
+./app.e 'https://panoramafirm.pl/szukaj?k=notariusz' '[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+' 0
 ```
+
+## Output
+```
+notariusz@kancelariarejenta.pl
+notariusze@kn.wroc.pl
+kancelaria@walewska.eu
+kancelariakielce@gmail.com
+biuro@notariusz24.com
+kancelaria@notariusze-wroclaw.com
+notariusz@bankosz.pl
+lewicka@notar.pl
+kancelaria@notariuszkielce.com
+pbakalska@notariusz-kancelaria24.pl
+mikolajczyk@kancelarie-notarialne.info.pl
+ewapluta@notariusz.pl
+tomaszzawadzki@rejent.pl
+biuro@notariuszerondowroclaw.pl
+anna.oskaldowicz@notariusz.lodz.pl
+katarzynastencel@rejent.pl
+kancelaria@notariusz-tarnowskiegory.pl
+agnieszka.bunkowska@gdin.pl
+biuro@notariusz-wroclaw.net
+a.karczewska@post.pl
+kancelaria@krakowskinotariusz.pl
+solanowski@notariusze.waw.pl
+eniro@eniro.pl
+iod@eniro.com
+```
+
+
 
 ## Author
 Bartosz Pieszko <br/>

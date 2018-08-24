@@ -35,7 +35,7 @@ void WebCrawler::crawl(const std::string & url, const int depth, std::ostream & 
 		for (std::sregex_iterator i = queryBegin; i != queryEnd; ++i) {
 			std::string matchQuery = (*i).str();
 			if (visitedMatch.find(matchQuery) == visitedMatch.end()) {
-				out << matchQuery << " : " << actUrl.first << std::endl;
+				out << matchQuery << std::endl;
 				visitedMatch.insert(matchQuery);
 			}
 		}
