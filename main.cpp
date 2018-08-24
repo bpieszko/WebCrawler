@@ -17,8 +17,16 @@ int main (int argc, char * argv[]) {
 
 	std::regex regex{argv[2]};
 	
+	std::string url{argv[1]};
+	if (url.substr(0, 8) == "https://")
+		url.replace(0, 8, "");
+	if (url.substr(0, 7) == "http://")
+		url.replace(0, 7, "");
+	if (url.substr(0, 4) != "www.")
+		url = "www." + url;
+
 	WebCrawler wc(regex);
-	wc.crawl(argv[1], std::stoi(argv[3]), std::cout);
+	wc.crawl(url, std::stoi(argv[3]), std::cout);
 	
 	return 0;
 }
