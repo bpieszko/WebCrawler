@@ -59,10 +59,6 @@ void WebCrawler::crawl(const std::string & url, const int depth, std::ostream & 
 	}
 }
 
-void threadCrawl(const std::string & url, const int depth, std::ostream & out) {
-	
-}
-
 void WebCrawler::setOptCURL(CURL * curl, const std::string & url, std::string * result) {
 	curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
